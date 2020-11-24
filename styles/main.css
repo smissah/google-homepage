@@ -192,7 +192,7 @@ footer .right-links ul {
   display: inline;
   position: absolute;
   right: 0;
-  top: 2rem;
+  top: 3rem;
   margin-right: var(--margin);
 }
 
@@ -209,5 +209,9 @@ footer .right-links ul li a .txt-links {
 footer .center-link {
   text-align: center;
   place-self: center;
+}
+
+footer .location {
+  padding: 0.5rem;
 }
 /*# sourceMappingURL=main.css.map */

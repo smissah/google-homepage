@@ -217,7 +217,7 @@ footer {
       display: inline;
       position: absolute;
       right: 0;
-      top: 2rem;
+      top: 3rem;
       margin-right: var(--margin);
 
       li {
@@ -238,5 +238,9 @@ footer {
   .center-link {
     text-align: center;
     place-self: center;
+  }
+
+  .location {
+    padding: 0.5rem;
   }
 }
