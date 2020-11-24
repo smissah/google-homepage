@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+:root {
+  --font-size: 1.4rem;
+  --margin: 2rem;
+  --clr-link: #404040;
+  --clr-ltgrey: #f2f2f2;
+}
+
+a,
+.btn {
+  cursor: pointer;
+}
+
 *,
 *::before,
 *::after {
@@ -29,19 +41,20 @@ body {
 }
 
 .container .search-input .search-bar {
-  height: 30px;
-  width: 350px;
+  height: 35px;
+  width: 450px;
   border: 0.25px solid #b8b8b8;
   border-radius: 25px;
   outline: none;
 }
 
 .container .search-input .search-bar .search-window {
+  font-size: var(--font-size);
   position: relative;
   top: 0px;
   left: 30px;
   height: 100%;
-  width: 290px;
+  width: 390px;
   border: none;
   background-color: none transparent;
   outline: none;
@@ -75,9 +88,9 @@ body {
 .container .btns .lucky-btn {
   padding: 0.5rem 0.65rem;
   margin: -1rem 0.5rem;
-  background: #f8f9fa;
+  background: var(--clr-ltgrey);
   font-family: "Open Sans", sans-serif;
-  font-size: 0.9rem;
+  font-size: var(--font-size);
   border: none;
   outline: none;
   border-radius: px;
@@ -89,30 +102,40 @@ body {
 }
 
 header {
-  margin: 1rem;
+  font-family: "Open Sans", sans-serif;
+  margin: var(--margin);
   display: grid;
   height: 50px;
+  font-size: var(--font-size);
+  text-align: center;
 }
 
 header .profile {
   border-radius: 25px;
+  position: absolute;
+  bottom: -2.8rem;
+  display: inline-block;
 }
 
 header .links {
+  margin: auto var(--margin);
   display: inline;
-  align-items: center;
-  padding: auto;
+}
+
+header .links .left-links {
+  position: relative;
+  left: 0;
 }
 
 header .links .left-links ul {
-  display: inline-block;
+  display: inline;
   float: left;
 }
 
 header .links .left-links ul li a {
-  margin-right: 1rem;
-  color: #404040;
-  font-size: 1.5rem;
+  margin-right: var(--margin);
+  color: var(--clr-link);
+  font-size: var(--font-size);
 }
 
 header .links .left-links ul li a .txt-links {
@@ -120,14 +143,14 @@ header .links .left-links ul li a .txt-links {
 }
 
 header .links .right-links {
-  display: grid;
-  place-items: center;
-  float: right;
+  position: relative;
+  right: 0;
 }
 
 header .links .right-links ul {
-  display: inline-block;
-  float: left;
+  display: inline;
+  float: right;
+  margin-right: var(--margin);
 }
 
 header .links .right-links ul li a {
@@ -136,12 +159,16 @@ header .links .right-links ul li a {
 }
 
 footer {
-  padding: 1rem;
+  font-family: "Open Sans", sans-serif;
+  display: grid;
   position: absolute;
+  font-size: var(--font-size);
+  color: var(--clr-link);
+  background: var(--clr-ltgrey);
   bottom: 0;
   height: 100px;
   width: 100%;
-  background: #f2f2f2;
+  padding: 2rem;
 }
 
 footer ul {
@@ -149,14 +176,11 @@ footer ul {
   float: left;
 }
 
-footer ul li {
-  margin-right: 1rem;
-}
-
 footer ul li a {
-  color: #404040;
+  color: var(--clr-link);
   font-family: "Open Sans", sans-serif;
-  font-size: 1.3rem;
+  font-size: var(--font-size);
+  margin-right: 1rem;
 }
 
 footer ul li a .txt-links {
