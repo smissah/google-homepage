@@ -160,7 +160,7 @@ header .links .right-links ul li a {
 
 footer {
   font-family: "Open Sans", sans-serif;
-  display: grid;
+  display: inline-block;
   position: absolute;
   font-size: var(--font-size);
   color: var(--clr-link);
@@ -168,22 +168,46 @@ footer {
   bottom: 0;
   height: 100px;
   width: 100%;
-  padding: 2rem;
 }
 
-footer ul {
-  display: inline-block;
-  float: left;
+footer .left-links {
+  margin-left: var(--margin);
 }
 
-footer ul li a {
+footer .left-links ul {
+  display: inline;
+}
+
+footer .left-links ul li a {
   color: var(--clr-link);
   font-family: "Open Sans", sans-serif;
-  font-size: var(--font-size);
   margin-right: 1rem;
 }
 
-footer ul li a .txt-links {
+footer .left-links ul li a .txt-links {
   font-family: "Open Sans", sans-serif;
+}
+
+footer .right-links ul {
+  display: inline;
+  position: absolute;
+  right: 0;
+  top: 2rem;
+  margin-right: var(--margin);
+}
+
+footer .right-links ul li a {
+  color: var(--clr-link);
+  font-family: "Open Sans", sans-serif;
+  margin-right: 1rem;
+}
+
+footer .right-links ul li a .txt-links {
+  font-family: "Open Sans", sans-serif;
+}
+
+footer .center-link {
+  text-align: center;
+  place-self: center;
 }
 /*# sourceMappingURL=main.css.map */
